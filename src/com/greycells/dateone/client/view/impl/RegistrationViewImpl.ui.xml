@@ -1,0 +1,88 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.user.datepicker.client" xmlns:cropNs="com.google.code.gwt.crop.client">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:LayoutPanel width="324px" height="800px">
+			<g:layer left="10px" width="128px" top="12px" height="18px">
+				<g:Label text="Register Here!"/>
+			</g:layer>
+			<g:layer left="20px" width="73px" top="43px" height="18px">
+				<g:Label text="First Name:"/>
+			</g:layer>
+			<g:layer left="110px" width="186px" top="36px" height="25px">
+				<g:TextBox name="tbxFirstName" ui:field="tbxFirstName"/>
+			</g:layer>
+			<g:layer left="20px" width="60px" top="74px" height="18px">
+				<g:Label text="Surname:"/>
+			</g:layer>
+			<g:layer left="110px" width="186px" top="67px" height="25px">
+				<g:TextBox name="tbxSurname" ui:field="tbxSurname"/>
+			</g:layer>
+			<g:layer left="20px" width="46px" top="105px" height="18px">
+				<g:Label text="Email:"/>
+			</g:layer>
+			<g:layer left="110px" width="186px" top="98px" height="25px">
+				<g:TextBox name="tbxEmail" ui:field="tbxEmail"/>
+			</g:layer>
+			<g:layer left="20px" width="85px" top="133px" height="18px">
+				<g:Label text="Date Of Birth:"/>
+			</g:layer>
+			<g:layer left="110px" width="140px" top="129px" height="22px">
+				<g:ListBox name="lbxDay" ui:field="lbxDay" width="40px" enabled="true"/>
+			</g:layer>
+			<g:layer left="155px" width="100px" top="129px" height="22px">
+				<g:ListBox name="lbxMonth" ui:field="lbxMonth" width="80px"/>
+			</g:layer>
+			<g:layer left="240px" width="70px" top="129px" height="22px">
+				<g:ListBox name="lbxYear" ui:field="lbxYear" width="60px"/>
+			</g:layer>
+			<g:layer left="20px" width="52px" top="174px" height="18px">
+				<g:Label text="Gender:"/>
+			</g:layer>
+			<g:layer left="110px" width="105px" top="170px" height="22px">
+				<g:ListBox name="lbxGender" ui:field="lbxGender" width="90px"/>
+			</g:layer>
+			<g:layer left="20px" width="85px" top="202px" height="18px">
+				<g:Label text="Interested in:"/>
+			</g:layer>
+			<g:layer left="110px" width="187px" top="198px" height="22px">
+				<g:ListBox name="lbxInterestedIn" ui:field="lbxInterestedIn" width="90px"/>
+			</g:layer>
+			<g:layer left="20px" width="60px" top="265px" height="18px">
+				<g:Label text="Postcode:"/>
+			</g:layer>
+			<g:layer left="110px" width="190px" top="258px" height="25px">
+				<g:TextBox name="tbxPostcode" ui:field="tbxPostcode" width="100px"/>
+			</g:layer>
+			<g:layer left="20px" width="60px" top="293px" height="18px">
+				<g:Label text="Address:"/>
+			</g:layer>
+			<g:layer left="110px" width="186px" top="289px" height="22px">
+				<g:ListBox name="lbxAddress" ui:field="lbxAddress" width="186px"/>
+			</g:layer>
+			<g:layer left="20px" width="60px" top="392px" height="18px">
+				<g:Label text="Password:"/>
+			</g:layer>
+			<g:layer left="110px" width="186px" top="385px" height="25px">
+				<g:PasswordTextBox name="tbxPassword" ui:field="tbxPassword"/>
+			</g:layer>
+			<g:layer left="20px" width="118px" top="423px" height="18px">
+				<g:Label text="Confirm:"/>
+			</g:layer>
+			<g:layer left="110px" width="186px" top="416px" height="25px">
+				<g:PasswordTextBox name="tbxCfmPassword" ui:field="tbxCfmPassword"/>
+			</g:layer>
+			<g:layer left="230px" width="70px" top="258px" height="24px">
+				<g:Button text="Lookup" ui:field="postcodeLookup"/>
+			</g:layer>
+			<g:layer left="100px" width="85px" top="472px" height="24px">
+				<g:Button ui:field="register">Register</g:Button>
+			</g:layer>
+		</g:LayoutPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

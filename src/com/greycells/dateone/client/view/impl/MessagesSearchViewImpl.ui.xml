@@ -1,0 +1,15 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+xmlns:s='urn:import:org.waveprotocol.box.webclient.search'																									
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.greycells.dateone.client.view.impl">
+	<ui:style>
+ 	.searchPanel { 
+       /* 
+        * GWT's drag panel separators are already huge, so no margin needed on 
+        * sides that have drag panels. 
+        */ 
+       margin: gap 0 0 gap; 
+     } 
+	</ui:style>
+          <s:SearchPanelWidget ui:field="searchPanel"/>
+</ui:UiBinder> 

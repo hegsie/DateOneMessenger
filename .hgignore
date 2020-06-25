@@ -1,0 +1,15 @@
+
+syntax: regexp
+^build$
+syntax: regexp
+^dist$
+syntax: regexp
+^gen$
+syntax: regexp
+^gwt-unitCache$
+syntax: regexp
+^test_out$
+syntax: regexp
+^third_party$
+syntax: regexp
+^war$

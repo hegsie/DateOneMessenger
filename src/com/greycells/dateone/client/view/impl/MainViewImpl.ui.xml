@@ -1,0 +1,79 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:f='urn:import:org.waveprotocol.box.webclient.widget.frame'
+	xmlns:w='urn:import:org.waveprotocol.wave.client.widget.common'>
+
+	<ui:style type="com.greycells.dateone.client.view.impl.MainViewImpl.Style">
+	@def rootBackground #f0f0ff;
+	@def gap 10px;
+	.root {
+		background: rootBackground;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+	.root2 {
+		position: absolute;
+	}
+	
+	.splitPanel {
+		
+	}
+	
+	@external gwt-SplitLayoutPanel-HDragger;
+	@external gwt-SplitLayoutPanel-VDragger;
+	.splitPanel .gwt-SplitLayoutPanel-HDragger,.splitPanel .gwt-SplitLayoutPanel-VDragger
+		{
+		background-color: rootBackground;
+	}
+	
+	.searchPanel {
+		/*
+			       * GWT's drag panel separators are already huge, so no margin needed on
+			       * sides that have drag panels.
+			       */
+		margin: gap 0 0 gap;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		width: 400px;
+	}
+	
+	.wavePanel {
+		/*
+			       * GWT's drag panel separators are already huge, so no margin needed on
+			       * sides that have drag panels.
+			       */
+		margin: gap 0 0 0;
+	}
+	
+	.waveHolder {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	</ui:style>
+	<g:DockLayoutPanel unit="PX" styleName="{style.root}">
+		<g:north size="30">
+			<g:FlowPanel width="100%" ui:field="runnerPanel"></g:FlowPanel>
+		</g:north>
+		<g:center>
+			<g:SplitLayoutPanel ui:field="splitPanel"
+				stylePrimaryName="{style.splitPanel}">
+				<g:east size="400">
+					<g:FlowPanel height="100%" width="100%" ui:field="rightPanel" styleName="{style.searchPanel}"></g:FlowPanel>
+				</g:east>
+				<g:center>
+					<w:ImplPanel height="100%" width="100%" ui:field="contentPanel" addStyleNames="{style.wavePanel}"/>
+				</g:center>
+			</g:SplitLayoutPanel>
+		</g:center>
+	</g:DockLayoutPanel>
+</ui:UiBinder> 
